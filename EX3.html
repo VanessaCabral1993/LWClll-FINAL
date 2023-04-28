@@ -1,0 +1,13 @@
+<template>
+	<lightning-card title="Criar Nova Oportunidade">
+		<div class="slds-p-around_medium">
+			<lightning-input label="Nome da Oportunidade*" value={nome} onchange={handleNomeChange}></lightning-input>
+			<lightning-input label="Fase*" value={fase} onchange={handleFaseChange}></lightning-input>
+			<lightning-input label="Tipo*" value={tipo} onchange={handleTipoChange}></lightning-input>
+			<lightning-input type="number" label="Valor*" value={valor} onchange={handleValorChange}></lightning-input>
+			<lightning-input type="date" label="Data de Fechamento*" value={dataFechamento}
+				onchange={handleDataFechamentoChange}></lightning-input>
+			<lightning-button variant="brand" label="Salvar" onclick={handleSave}></lightning-button>
+		</div>
+	</lightning-card>
+</template>
